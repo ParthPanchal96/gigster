@@ -5,7 +5,7 @@ ini_set("session.cookie_httponly", 1);
 session_start();
 $_SESSION['generated'] = time();
 $GLOBALS['debug_sql'] = array();
-$sitedef = $_SERVER[ 'SERVER_NAME']; 
+echo $sitedef = $_SERVER[ 'SERVER_NAME']; 
 $twitterlink="#";
 $fblink="#";
 $instagramlink="#";
@@ -19,13 +19,13 @@ if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 	$__dbpass = "";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST']."/amol/bettr/";
+	$serverpath = "http://".$_SERVER['HTTP_HOST']."/amol/gigster/";
 	define( 'SERVERPATH', $serverpath );
-	$innerpath = "http://".$_SERVER['HTTP_HOST']."/amol/bettr/inner/";
+	$innerpath = "http://".$_SERVER['HTTP_HOST']."/amol/gigster/inner/";
 	define( 'INNERPATH', $innerpath );
 	$adminpath = $serverpath."cadmin/";
 	define( 'ADMINPATH', $adminpath );
-	$upload_path=$_SERVER['DOCUMENT_ROOT']."amol/bettr/uploads/";
+	$upload_path=$_SERVER['DOCUMENT_ROOT']."amol/gigster/uploads/";
 	setcookie("serverpath",$serverpath);
 	$sitename="Bettr";
 	$currency="SGD";
@@ -70,8 +70,8 @@ elseif ('gigster.fountaintechies.com' == $sitedef)
 	setcookie("serverpath",$serverpath);
 	$sitename="Gigster";
 	$currency="SGD";
-	$fbAppId="787498344628438";
-	$fbAppSecret="631de200f0d6b301881608dd816fa2f8";	}
+	$fbAppId="846990408668822";
+	$fbAppSecret="caefe0e5bf76054cc7f1edef85cc2674";	}
 
 db_connect();
 
