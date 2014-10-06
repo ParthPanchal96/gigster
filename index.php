@@ -17,7 +17,7 @@ include('cfg/more-functions.php'); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS
-<?php echo $serverpath; die();?>
+
   ================================================== -->
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/skeleton.css">
