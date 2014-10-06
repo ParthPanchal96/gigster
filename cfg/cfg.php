@@ -62,11 +62,11 @@ elseif ('gigster.fountaintechies.com' == $sitedef)
 	define( 'DEBUG', false );
 	$serverpath = "http://".$_SERVER['HTTP_HOST'];
 	define( 'SERVERPATH', $serverpath );
-	echo $innerpath = "http://".$_SERVER['HTTP_HOST']."/bettrinner/";
+	 $innerpath = "http://".$_SERVER['HTTP_HOST']."/";
 	define( 'INNERPATH', $innerpath );
 	$adminpath = $serverpath."xadmin/";
 	define( 'ADMINPATH', $adminpath );
-	echo $upload_path=$_SERVER['DOCUMENT_ROOT']."/bettr/uploads/";die();
+	 $upload_path=$_SERVER['DOCUMENT_ROOT']."/uploads/";
 	setcookie("serverpath",$serverpath);
 	$sitename="Gigster";
 	$currency="SGD";
