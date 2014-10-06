@@ -69,13 +69,13 @@ define('CACHE_DIR_NAME',		'/imagecache/');
 define('CACHE_DIR',				CURRENT_DIR . CACHE_DIR_NAME);
 if($site_def=="localhost" || $site_def=="192.168.1.2")
 {
-     echo "Scripter"; die();
-define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."bettr");
+    
+define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."amol/gigster/");
 }
 else
 {
-    echo "aashish"; die();
-define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."/bettr/");
+    echo $_SERVER['DOCUMENT_ROOT']."/"; die();
+define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."/");
 }
 // Images must be local files, so for convenience we strip the domain if it's there
 $image			= preg_replace('/^(s?f|ht)tps?:\/\/[^\/]+/i', '', (string) $_GET['image']);
