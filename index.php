@@ -134,13 +134,13 @@ include('cfg/more-functions.php'); ?>
          <table cellpadding="0" cellspacing="0" >
             <tr>
                 <td>
-                    <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?=$userInfo['profileimage'];?>&width=100&height=100" style="margin-top: 13px;margin-left: 13px;" />
+                    <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $userInfo['profileimage'];?>&width=100&height=100" style="margin-top: 13px;margin-left: 13px;" />
                 </td>
                 <td valign="top" style="vertical-align:top;padding-left:10px;">
                 <h6 style="padding-right: 10px;font-size: 17px;padding-top: 13px;text-align: left;">
-       			<a class="3gigslink" style="font-weight: 700;font-size: 16px;color: #000;" href="<?php echo $serverpath;?>latest-gig/<?php echo mera_url_encode($latest['rows'][$i]['prjTitle']);?>/<?php echo $latest['rows'][$i]['prjId'];?>" data-slidepanel="panel"><?=$latest['rows'][$i]['prjTitle'];?></a>
+       			<a class="3gigslink" style="font-weight: 700;font-size: 16px;color: #000;" href="<?php echo $serverpath;?>latest-gig/<?php echo mera_url_encode($latest['rows'][$i]['prjTitle']);?>/<?php echo $latest['rows'][$i]['prjId'];?>" data-slidepanel="panel"><?php echo $latest['rows'][$i]['prjTitle'];?></a>
         		</h6>
-                <p style="font-size: 11px;padding-right: 10px;text-align: left;line-height: 18px;"><?=strip_string($latest['rows'][$i]['prjdesc'],100);?></p>
+                <p style="font-size: 11px;padding-right: 10px;text-align: left;line-height: 18px;"><?php echo strip_string($latest['rows'][$i]['prjdesc'],100);?></p>
                 </td>
             </tr>
           </table>
