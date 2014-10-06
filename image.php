@@ -54,7 +54,7 @@
 /////////////////////
 // CODE STARTS HERE
 /////////////////////
-$site_def = $_SERVER[ 'SERVER_NAME' ];
+echo $site_def = $_SERVER[ 'SERVER_NAME' ]; die();
 if (!isset($_GET['image']))
 {
 	header('HTTP/1.1 400 Bad Request');
