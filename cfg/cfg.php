@@ -34,10 +34,10 @@ if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 }
 elseif ("www.infodreams.in" == $sitedef || $sitedef=="infodreams.in")
 {
-	 $__dbhost = "dbbetterapp.db.11839294.hostedresource.com";
-	 $__dbname = "dbbetterapp";
-	 $__dbuser = "dbbetterapp";
-	$__dbpass = "Better@123";
+	 $__dbhost = "localhost";
+	 $__dbname = "gigster";
+	 $__dbuser = "gigster";
+	$__dbpass = "4mAm8CYF4SA2Vh6h";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
 	$serverpath = "http://".$_SERVER['HTTP_HOST']."/bettr/";
