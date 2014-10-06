@@ -5,7 +5,7 @@ ini_set("session.cookie_httponly", 1);
 session_start();
 $_SESSION['generated'] = time();
 $GLOBALS['debug_sql'] = array();
-echo $sitedef = $_SERVER[ 'SERVER_NAME']; 
+ $sitedef = $_SERVER[ 'SERVER_NAME']; 
 $twitterlink="#";
 $fblink="#";
 $instagramlink="#";
