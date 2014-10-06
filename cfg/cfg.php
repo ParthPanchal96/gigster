@@ -5,7 +5,7 @@ ini_set("session.cookie_httponly", 1);
 session_start();
 $_SESSION['generated'] = time();
 $GLOBALS['debug_sql'] = array();
-echo $sitedef = $_SERVER[ 'SERVER_NAME']; die();
+ $sitedef = $_SERVER[ 'SERVER_NAME']; 
 $twitterlink="#";
 $fblink="#";
 $instagramlink="#";
@@ -60,7 +60,7 @@ elseif ('gigster.fountaintechies.com' == $sitedef)
 	$__dbpass = "4mAm8CYF4SA2Vh6h";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST']."/bettr/";
+	echo $serverpath = "http://".$_SERVER['HTTP_HOST']."/bettr/";die();
 	define( 'SERVERPATH', $serverpath );
 	$innerpath = "http://".$_SERVER['HTTP_HOST']."/bettrinner/";
 	define( 'INNERPATH', $innerpath );
