@@ -75,9 +75,9 @@ include('cfg/more-functions.php'); ?>
        <!-- <li> <a class="scroll" href="#home">Home</a> </li>-->
         <li class="messages-menu">
         <?php if(!isset($_SESSION['uId'])) { ?>
-        <a class="fancyboxaddgig fancybox.iframe" href="<?=$serverpath;?>my-login.php?param=add" >Post A Gig</a>
+        <a class="fancyboxaddgig fancybox.iframe" href="<?php echo $serverpath;?>my-login.php?param=add" >Post A Gig</a>
         <?php	}	else	{	?>
-			        <a href="<?=$serverpath;?>addgig" >Post A Gig</a>
+			        <a href="<?php echo $serverpath;?>addgig" >Post A Gig</a>
 		<?php	}	?>
         </li>
         <li class="messages-menu"> <a class="fancybox fancybox.iframe" href="<?php echo $serverpath; ?>gigs.php">Find A Gig</a> </li>
@@ -134,7 +134,7 @@ include('cfg/more-functions.php'); ?>
          <table cellpadding="0" cellspacing="0" >
             <tr>
                 <td>
-                    <img src="<?=$serverpath;?>image.php?image=/uploads/profileimage/<?=$userInfo['profileimage'];?>&width=100&height=100" style="margin-top: 13px;margin-left: 13px;" />
+                    <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?=$userInfo['profileimage'];?>&width=100&height=100" style="margin-top: 13px;margin-left: 13px;" />
                 </td>
                 <td valign="top" style="vertical-align:top;padding-left:10px;">
                 <h6 style="padding-right: 10px;font-size: 17px;padding-top: 13px;text-align: left;">
@@ -159,13 +159,13 @@ include('cfg/more-functions.php'); ?>
  <?php if(!isset($_SESSION['uId']))
 		{
 			?>
-        <a class="fancyboxaddgig fancybox.iframe" href="<?=$serverpath;?>my-login.php?param=all"  style="color:#fff;font-size: 20px; padding:1px 20px 9px;" >More Gigs</a>
+        <a class="fancyboxaddgig fancybox.iframe" href="<?php echo $serverpath;?>my-login.php?param=all"  style="color:#fff;font-size: 20px; padding:1px 20px 9px;" >More Gigs</a>
         <?php
 		}
 		else
 		{
 			?>
-			        <a href="<?=$serverpath;?>allgigs"  style="color:#fff; font-size: 20px; padding:1px 20px 9px;">More Gigs</a>
+			        <a href="<?php echo $serverpath;?>allgigs"  style="color:#fff; font-size: 20px; padding:1px 20px 9px;">More Gigs</a>
 			<?php
 		}
 		?>
