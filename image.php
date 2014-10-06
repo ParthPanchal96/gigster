@@ -54,7 +54,7 @@
 /////////////////////
 // CODE STARTS HERE
 /////////////////////
-echo $site_def = $_SERVER[ 'SERVER_NAME' ]; die();
+$site_def = $_SERVER[ 'SERVER_NAME' ];
 if (!isset($_GET['image']))
 {
 	header('HTTP/1.1 400 Bad Request');
@@ -69,10 +69,12 @@ define('CACHE_DIR_NAME',		'/imagecache/');
 define('CACHE_DIR',				CURRENT_DIR . CACHE_DIR_NAME);
 if($site_def=="localhost" || $site_def=="192.168.1.2")
 {
+     echo "Scripter"; die();
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."bettr");
 }
 else
 {
+    echo "aashish"; die();
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."/bettr/");
 }
 // Images must be local files, so for convenience we strip the domain if it's there
