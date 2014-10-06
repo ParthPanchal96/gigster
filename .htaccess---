@@ -1,0 +1,56 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /bettr/
+
+RewriteRule ^(cfg)($|/) - [L]
+RewriteRule ^(css)($|/) - [L]
+RewriteRule ^(font-awesome)($|/) - [L]
+RewriteRule ^(fonts)($|/) - [L]
+RewriteRule ^(img)($|/) - [L]
+RewriteRule ^(js)($|/) - [L]
+RewriteRule ^(sdk)($|/) - [L]
+RewriteRule ^(lib)($|/) - [L]
+
+
+#Site Settings
+
+
+RewriteRule ^rateuser rate-user.php
+RewriteRule ^rejectterms reject-terms.php
+RewriteRule ^loginwithfacebook facebook-login.php
+RewriteRule ^setupprofile set-up-profile.php
+RewriteRule ^savemyprofile save-my-profile.php
+RewriteRule ^loginwithtwitter twitter-login.php
+RewriteRule ^loginwithtlinkedin linkLogin.php
+RewriteRule ^loginwithgoogle google-login.php
+RewriteRule ^dashboard user-dashboard.php
+RewriteRule ^profile user-dashboard.php?pg=profile
+RewriteRule ^allgigs user-dashboard.php?pg=allgigs
+RewriteRule ^gigsdue user-dashboard.php?pg=gigsdue
+RewriteRule ^mygigs user-dashboard.php?pg=mygigs
+RewriteRule ^assignedgigs user-dashboard.php?pg=assignedgigs
+RewriteRule ^oldgigs user-dashboard.php?pg=oldgigs
+RewriteRule ^allmessages user-dashboard.php?pg=allmessages
+RewriteRule ^addnewgig save-gig.php
+RewriteRule ^saveProposal add-proposal.php
+RewriteRule ^saveProfile save-profile.php
+RewriteRule ^updateProfile update-my-profile.php
+RewriteRule ^logout user-dashboard.php?pg=logout
+RewriteRule sendmessage send-message.php
+RewriteRule finalterms final-terms.php
+RewriteRule googlelogin google-login.php
+RewriteRule postingmessage post-message.php
+RewriteRule saveprofile save-my-profile.php
+RewriteRule addgig user-dashboard.php?pg=newgig
+
+
+RewriteRule ^delMessage/([^/]*)$ delete-message.php?delId=$1 [L]
+RewriteRule ^viewMessageThread/([^/]*)$ view-message-thread.php?pId=$1 [L]
+RewriteRule ^awardproject/([^/]*)/([^/]*)$ user-dashboard.php?pg=award&userId=$1&projectId=$2 [L]
+RewriteRule ^viewmyGig/([^/]*)/([^/]*)$ viewmythread1.php?pId=$2 [L]
+RewriteRule ^viewGig/([^/]*)/([^/]*)$ viewthread.php?pId=$2 [L]
+RewriteRule ^acceptGig/([^/]*)/([^/]*)$ user-dashboard.php?pg=accept&gigId=$1&userId=$2 [L]
+RewriteRule ^viewMessages/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ view-messages.php?pId=$1&msgto=$2&msgfrom=$3&mtime=$4 [L]
+RewriteRule ^sendTerms terms-sending.php
+
+</IfModule>

@@ -1,0 +1,13 @@
+#pageslide {
+	display: none;
+
+	position: fixed;
+	top: 0;
+	height: 100%;
+	border-left:solid 1px #b9b9b9;
+	overflow:auto;
+	width: 460px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	color: #000;
+}

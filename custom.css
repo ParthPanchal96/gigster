@@ -1,0 +1,55 @@
+.mhidden{
+	display:none;
+}
+.mandatory{
+	color:red;
+}
+.mbuttons{
+display: inline-block;
+margin-top: 420px;
+width: 100%;
+}
+.mwhite{
+	color:white;
+}
+.fullwidth{
+	width:100%;
+}
+.m450{
+	width:450px;
+}
+.no-border{
+	border:none;
+}
+.small-control{
+	width:60px;
+	}
+	.mfont{
+		font-size:12px;	
+	}
+	.mbottom{
+	border-bottom:solid 1px #d5d4d4;	
+	}
+	
+	.mfull{
+		width:350px;
+		}
+
+
+.mmessages{
+	background-color:#ececec;
+	margin:10px;
+	padding:10px;
+}
+.mmed{
+	font-size:2em;
+	border:none !important;
+	color:#012488;
+}
+.table tfoot{
+	display:none;
+}
+.mpad{
+
+	padding:4px;
+	}
