@@ -60,7 +60,7 @@ elseif ('gigster.fountaintechies.com' == $sitedef)
 	$__dbpass = "4mAm8CYF4SA2Vh6h";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST']."/";
+	echo $serverpath = "http://".$_SERVER['HTTP_HOST']."/"; die();
 	define( 'SERVERPATH', $serverpath );
 	 $innerpath = "http://".$_SERVER['HTTP_HOST']."/";
 	define( 'INNERPATH', $innerpath );
