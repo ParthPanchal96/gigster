@@ -74,7 +74,7 @@ define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."amol/gigster/");
 }
 else
 {
-    echo $_SERVER['DOCUMENT_ROOT']."/"; die();
+    
 define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']."/");
 }
 // Images must be local files, so for convenience we strip the domain if it's there
