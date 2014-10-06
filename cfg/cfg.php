@@ -5,7 +5,7 @@ ini_set("session.cookie_httponly", 1);
 session_start();
 $_SESSION['generated'] = time();
 $GLOBALS['debug_sql'] = array();
-$sitedef = $_SERVER[ 'SERVER_NAME'];
+echo $sitedef = $_SERVER[ 'SERVER_NAME']; die();
 $twitterlink="#";
 $fblink="#";
 $instagramlink="#";
@@ -40,7 +40,7 @@ elseif ("www.infodreams.in" == $sitedef || $sitedef=="infodreams.in")
 	$__dbpass = "4mAm8CYF4SA2Vh6h";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST']."/bettr/";
+	$serverpath = "http://".$_SERVER['HTTP_HOST'];
 	define( 'SERVERPATH', $serverpath );
 	$innerpath = "http://".$_SERVER['HTTP_HOST']."/bettrinner/";
 	define( 'INNERPATH', $innerpath );
@@ -52,12 +52,12 @@ elseif ("www.infodreams.in" == $sitedef || $sitedef=="infodreams.in")
 	$currency="SGD";
 	$fbAppId="609235199196435";
 	$fbAppSecret="f79a4cf4da4db6382605393c4b4f8bfb";	}
-elseif ('bettr.80startups.com' == $sitedef)
+elseif ('gigster.fountaintechies.com' == $sitedef)
 {
-	$__dbhost = "localhost";
-	$__dbname = "bettr_bettr";
-	$__dbuser = "bettr_user";
-	$__dbpass = "B@ttr@2602";
+	 $__dbhost = "localhost";
+	 $__dbname = "gigster";
+	 $__dbuser = "gigster";
+	$__dbpass = "4mAm8CYF4SA2Vh6h";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
 	$serverpath = "http://".$_SERVER['HTTP_HOST']."/bettr/";
