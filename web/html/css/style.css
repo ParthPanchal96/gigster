@@ -58,8 +58,7 @@ body h4{
 .container{
 	max-width: 942px;
 	width: 100%;
-	margin: auto;
-        padding: 0px;}
+	margin: auto;padding: 0px;}
 #imgback img{width: 100%;}
  section li{float: left;margin: 13px;list-style-type: none;}
  #profilemenu a{
