@@ -8,7 +8,7 @@
 
 <!-- /.box-header -->
 
-<div class="box-body table-responsive no-padding" id="myGigs"> </div>
+<div class="box-body table-responsive no-padding" id="myGigs">ttt </div>
 <script type="text/javascript">
 	display_my_gigs('<?php echo $serverpath;?>');
 </script>
